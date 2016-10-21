@@ -1,0 +1,168 @@
+/*body*/
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../img/item3.png );
+	background-size: 100% auto;
+	background-position: center top;
+}
+
+/*wrapper*/
+
+#wrapper{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: content-box;
+	-moz-box-sizing:content-box;
+}
+
+/*header*/
+
+
+header{
+	width:100%;
+	height: auto;
+	display:inline-flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	align-items:baseline;
+}
+.header-logo{
+	width: 200px;
+	height: auto;
+	padding:0px 0px 0px 10px;
+	line-height: 110px;
+	color: white;
+	font-weight: lighter;
+	font-size: 3em;
+	text-align: left;
+}
+
+.header-social{
+	width: 200px;
+	height: auto;
+	padding: 0;
+	line-height: auto;
+	color: white;
+	font-weight: unset;
+	font-size: 3em;
+	text-align: center;
+}
+
+
+
+/*------main section------*/
+
+main{
+	display:flex;
+	height: 500px;
+	flex-flow:row wrap;
+	justify-content: center;
+	align-items:center;
+}
+.nav1{
+	flex-basis:auto;
+	height: auto;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+.nav2{
+	flex-basis: auto;
+	height: auto;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	align-items: baseline;
+}
+
+
+/*------tiles------*/
+
+button{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	line-height: .8;
+	appearance:none;
+	box-shadow: none;
+}
+button:focus{
+	outline: none;
+}
+section.flat button{
+	color: #fff;
+	background-color: #6496c8;
+	text-shadow: -1px 1px #417cb8;
+	border: none;
+}
+
+section.flat button:hover,
+section.flat button.hover{
+	background-color: #346392;
+	text-shadow: -1px 1px #27496d;
+}
+
+section.flat button:active,
+section.flat button.active{
+	background-color: #27496d;
+	text-shadow: -1px 1px #193047;
+}
+.btn-nav {
+	width: 130px;
+	height: 130px;
+}
+#btn-1{
+	background-image: url('../img/btn1.jpg');
+}
+#btn-2{
+	background-image: url('../img/btn2.jpg');
+}
+#btn-3{
+	background-image: url('../img/btn3.jpg');
+}
+#btn-4{
+	background-image: url('../img/btn4.jpg');
+}
+#btn-5{
+	background-image: url('../img/btn5.jpg');
+}
+#btn-6{
+	background-image: url('../img/btn6.jpg');
+}
+#btn-7{
+	background-image: url('../img/btn7.jpg');
+}
+
+
+
+/*------work-nav------*/
+.work-nav{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background-color:#27496d;
+	color:rgb(255,255,250);
+}
+.nav-left{
+	margin:10px auto 10px 10px;
+	font-size:1.7em;
+
+}
+.nav-right{
+	width: 30%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	font-size:1.3em;
+	margin:10px 10px 10px auto;
+
+}
+.nav-right-item{
+
+}
