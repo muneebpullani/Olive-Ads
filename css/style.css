@@ -1,28 +1,36 @@
 /*body*/
-html, body {
-	margin: 0;
-	padding: 0;
+html,body{
+	padding: 0px;
+	margin: 0px;
 }
+
 body{
-	background-image: url(../img/item3.png );
+	background-image: url('../img/item3.png') !important;
 	background-size: 100% auto;
 	background-position: center top;
+	font-size: 24px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 /*wrapper*/
-
 #wrapper{
 	width: 80%;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 	box-sizing: content-box;
 	-moz-box-sizing:content-box;
 }
 
 /*header*/
-
-
+.header-social .fa{
+	font-size: .8em !important;
+	color: rgb(212, 212, 224);
+}
 header{
+	padding: 0;
+	margin: 0;
 	width:100%;
 	height: auto;
 	display:inline-flex;
@@ -31,21 +39,31 @@ header{
 	align-items:baseline;
 }
 .header-logo{
-	width: 200px;
 	height: auto;
-	padding:0px 0px 0px 10px;
+	width: 200px;
+	display: inline-flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
 	line-height: 110px;
+}
+.logo-img{
+	height: auto;
+	width:35%;
+	margin-top: 10px;
+}
+.logo-name{
 	color: white;
 	font-weight: lighter;
-	font-size: 3em;
+	font-size: 2em;
 	text-align: left;
+	height: auto;
+	width:60%;
 }
-
 .header-social{
-	width: 200px;
+	width: auto;
 	height: auto;
 	padding: 0;
-	line-height: auto;
 	color: white;
 	font-weight: unset;
 	font-size: 3em;
@@ -57,32 +75,27 @@ header{
 /*------main section------*/
 
 main{
-	display:flex;
-	height: 500px;
-	flex-flow:row wrap;
+	height: auto;
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	align-content: center;
 	justify-content: center;
-	align-items:center;
 }
-.nav1{
-	flex-basis:auto;
+
+.main-sub{
+	display: flex;
 	height: auto;
-	color: white;
-	font-size: 3em;
-	text-align: center;
+	width:34%;
+	margin: 5px;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
 }
 
-.nav2{
-	flex-basis: auto;
-	height: auto;
-	color: white;
-	font-size: 3em;
-	text-align: center;
-	align-items: baseline;
+/*------button------*/
+a{
+	cursor: pointer;
 }
-
-
-/*------tiles------*/
-
 button{
 	display: inline-block;
 	margin: 0px;
@@ -91,55 +104,57 @@ button{
 	appearance:none;
 	box-shadow: none;
 }
-button:focus{
+/* -----tiles----- */
+
+.tile{
+	color:  rgb(250,240,230);
+	text-align: center;
+	width:126px;
+	height:126px;
+	margin: 10px;
+	border-radius: 3px;
+}
+
+.tile1, .tile1>i{
+	background-color: rgb(18, 90, 97);
+	color: rgb(26, 175, 168);
+}
+.tile2, .tile2>i{
+	background-color: rgb(23, 99, 14);
+	color: rgb(169, 203, 161);
+}
+.tile3{
+	background-color: rgb(26, 224, 195);
+}
+.tile4{
+	background-color: rgb(77, 86, 176);
+	color: rgb(131, 159, 233);
+}
+.tile5, .tile5>i{
+	background-color: rgb(77, 86, 176);
+	color: rgb(131, 159, 233);
+}
+.tile6{
+	background-color: #3bb1ba;
+}
+.tile7{
+	background-color: #71cbd2;
+}
+.tile>i{
+	font-size: 70px;
+	padding-top: 25px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #346392;
+}
+a:focus{
 	outline: none;
 }
-section.flat button{
-	color: #fff;
-	background-color: #6496c8;
-	text-shadow: -1px 1px #417cb8;
-	border: none;
-}
 
-section.flat button:hover,
-section.flat button.hover{
-	background-color: #346392;
-	text-shadow: -1px 1px #27496d;
-}
-
-section.flat button:active,
-section.flat button.active{
-	background-color: #27496d;
-	text-shadow: -1px 1px #193047;
-}
-.btn-nav {
-	width: 130px;
-	height: 130px;
-}
-#btn-1{
-	background-image: url('../img/btn1.jpg');
-}
-#btn-2{
-	background-image: url('../img/btn2.jpg');
-}
-#btn-3{
-	background-image: url('../img/btn3.jpg');
-}
-#btn-4{
-	background-image: url('../img/btn4.jpg');
-}
-#btn-5{
-	background-image: url('../img/btn5.jpg');
-}
-#btn-6{
-	background-image: url('../img/btn6.jpg');
-}
-#btn-7{
-	background-image: url('../img/btn7.jpg');
-}
-
-
-
+/*------work page------*/
 /*------work-nav------*/
 .work-nav{
 	width: 100%;
@@ -166,3 +181,127 @@ section.flat button.active{
 .nav-right-item{
 
 }
+/* work main part */
+.work-main{
+	display:flex;
+	height: 500px;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-items:center;
+	overflow: scroll;
+}
+.work-main-item{
+	background: rgba(103, 140, 168, 0.73);
+	padding: 5px;
+	width: 200px;
+	height: 150px;
+	margin-top: 10px;
+	line-height: 150px;
+	color: white;
+	font-weight: normal;
+	font-size: 3em;
+	text-align: center;
+}
+
+
+/*------glyphicons------*/
+
+@font-face {
+	font-family: 'Glyphicons Halflings';
+
+	src: url('glyphicons-halflings-regular.eot');
+	src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('glyphicons-halflings-regular.woff2') format('woff2'), url('glyphicons-halflings-regular.woff') format('woff'), url('glyphicons-halflings-regular.ttf') format('truetype'), url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+.glyphicon {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: normal;
+	line-height: auto;
+	color: #fff;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-arrow-left:before {
+	content: "\e091";
+	padding-right: 10px;
+}
+.glyphicon-phone:before {
+	content: "\e145";
+}
+
+/*------contact page------*/
+.contact-main{
+	width:100%;
+	margin:0px auto 0px auto;
+	font-family: 'Ubuntu', sans-serif;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content: space-around;
+	background-color:#226c02;
+	align-content: center;
+	color:rgb(250,240,230);
+}
+.contact-main-item{
+	width:40%;
+	margin: 3em 0px 3em 0px ;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+	.contact-item-head{
+		display: flex;
+		padding-bottom: 1em;
+		align-items: center;
+	}
+	.contact-head-1{
+		font-weight: bold;
+		font-size: 2.6em;
+		margin-right: 5px;
+	}
+	.contact-head-2{
+		font-size: .9em;
+	}
+	.contact-item-quote{
+		text-align: justify;
+		font-size: .6em;
+		margin-bottom:2em;
+	}
+	.contact-item-social{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.contact-social-item{
+		margin: 10px;
+		text-align: center;
+	}
+
+	.contact-item-form{
+		display: flex;
+		flex-direction: column;
+		margin:10px 0px 10px 0px;
+	}
+	.contact-form-item{
+		margin-bottom: .8em;
+	}
+	i{
+		font-size: 4em;
+		color: rgb(250,240,230);
+	}
+	.contact-form-button{
+		padding: 15px;
+		font-size: .6em;
+		background-color: rgb(0,0,0);
+		color: rgb(250,240,230);
+		font-weight:bold;
+		width: 50%;
+		border: none;
+	}
+	.contact-social-content{
+		margin-left: .8em;
+	}
